@@ -1,0 +1,49 @@
+  1  git config --global user.name "prayudaprianggara"
+    2  git config --global user.email prayudaprianggara@gmail.com
+    3  git config --list
+    4  pwd
+    5  cd ~/Desktop/h8
+    6  cd E:/
+    7  cd E:/
+    8  cd hacktiv8
+    9  ls
+   10  cd
+   11  cd E:\hacktiv8
+   12  clear
+   13  ls
+   14  git init
+   15  git status
+   16  git add .
+   17  git status
+   18  git add steve.jpeg
+   19  git status
+   20  git commit -m "initial commit"
+   21  git log
+   22  git status
+   23  git push origin master
+   24  git remote -v
+   25  git add .
+   26  git status
+   27  git remote origin add https://github.com/prayudaprianggara/hacktiv8.git
+   28  git push origin master
+   29  $ ssh-keygen -t rsa -b 4096 -C "prayudaprianggara@gmail.com"
+   30  ssh-keygen -t rsa -b 4096 -C "prayudaprianggara@gmail.com"
+   31  cat ~/.ssh/id_rsa
+   32  ssh-keygen -t rsa -b 4096 -C "prayudaprianggara@gmail.com"
+   33  cat ~/.ssh/id_rsa.pub
+   34  git push origin master
+   35  git remote -v
+   36  git remote add origin git@github.com:prayudaprianggara/hacktiv8.git
+   37  git push origin master
+   38  git push origin master
+   39  git push origin master -f
+   40  git push origin master -f
+   41  git push origin master -v
+   42  git remote -v
+   43  ssh-add ~/.ssh/id_rsa
+   44  git push origin master
+   45  ssh-add ~/.ssh/id_rsa
+   46  eval $(ssh-agent)
+   47  ssh-add ~/.ssh/id_rsa
+   48  git push origin master
+   49  history

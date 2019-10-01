@@ -1,0 +1,12 @@
+b {
+    color: blue;
+}
+#data-ktp {
+    text-decoration: underline;
+    color: green;
+}
+.data-ktp-primary {
+    text-decoration: underline;
+}
+.data-ktp-nonprimary {
+    background: yellow;
