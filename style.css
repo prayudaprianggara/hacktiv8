@@ -1,12 +1,38 @@
-b {
-    color: blue;
+body {
+    font-family: 'Mansalva', cursive;
 }
-#data-ktp {
-    text-decoration: underline;
-    color: green;
+h1 {
+    text-align: center;
 }
-.data-ktp-primary {
-    text-decoration: underline;
+.profile-data {
+    margin: auto;
 }
-.data-ktp-nonprimary {
-    background: yellow;
+
+.profile-data, tr, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.profile-data th {
+    background-color: rgb(2, 173, 10);
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 44px;
+}
+.profile-data th:hover {
+    background-color:lightgreen;
+    transition: .5s;
+}
+.profile-data td {
+    text-align: left;
+    padding: 10px;
+}
+.profile-data ul {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    left: 20px;
+}
+ul, li, a {
+    text-decoration: none;
+    color: black;
+}
