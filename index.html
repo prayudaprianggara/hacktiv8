@@ -1,36 +1,76 @@
 <html>
-    <head>
-        <title>Profil Saya</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <img src="steve.jpeg" alt="Steve"><br><br>
-        <em style="color: red">Biodata Saya</em><hr>
-        <br/>
 
-        <p><b class="data-ktp-primary" class="data-ktp">Nama: </b> Yuda </p>
-        <p><b class="data-ktp-primary" class="data-ktp">Umur: </b> 24 </p>
-        <p><b class="data-ktp data-ktp-nonprimary">Jenis Kelamin: </b> Laki-laki </p>
-        <b>Hobi: </b>
-        <ul>
-            <li>Futsal</li>
-            <li>Nonton Youtube</li>
-            <li>Main Game Onlline</li>
-        </ul>
-        
-        <!-- Ini buat nampilin interest  -->
-        <b>Interest: </b>
-        <ul>
-            <li>Olahraga</li>
-            <li>Internetan</li>
-        </ul>
+<head>
+    <title>Profil Saya</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+</head>
 
-        <!-- Untuk menampilkan Link -->
-        <b>Link: </b>
-        <ol>
-            <li><a href="https://www.facebook.com/angghara.yuda" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/yudanggaraa/?hl=id" target="_blank">Instagram</a></li>
-            <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
-        </ol>
-    </body>
+<body>
+    <div class="container">
+        <div class="row py-sm-5">
+            <div class="col-sm-3 text-center">
+                <img src="https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1482132470/vfmmn0twb17nn2epblee.png"
+                    class="img-thumbnail rounded-pill" alt="h8" height="200px">
+                <h1 class="display-4">Biodata</h1>
+            </div>
+            <div class="col-sm-9">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Gender</th>
+                                <th scope="col">Umur</th>
+                                <th scope="col">Hobi</th>
+                                <th scope="col">Interest</th>
+                                <th scope="col">Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Prayuda Prianggara</td>
+                                <td>Laki-laki</td>
+                                <td>24</td>
+                                <td>Internetan</td>
+                                <td>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Bikin Web</li>
+                                        <li class="list-group-item">Bikin Web</li>
+                                        <li class="list-group-item">Bikin Web</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a href="https://www.facebook.com/angghara.yuda"
+                                                target="_blank">Facebook</a></li>
+                                        <li class="list-group-item"><a
+                                                href="https://www.instagram.com/yudanggaraa/?hl=id"
+                                                target="_blank">Instagram</a></li>
+                                        <li class="list-group-item"><a href="https://github.com/prayudaprianggara"
+                                                target="_blank">Github</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    </div>
+</body>
+
 </html>
