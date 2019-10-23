@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Form Cocokologi</title>
+</head>
+
+<body>
+  <div class="container">
+    <form class="need-validation" novalidate>
+      
+      <!-- Nama -->
+      <div class="form-row">
+        <div class="col-md-8 mb-3">
+          <label>Nama</label>
+          <input type="text" class="form-control is-valid" placeholder="Isikan nama lengkap anda" required>
+          <div class="valid-feedback">
+            Jos namanya
+          </div>
+          <div class="invalid-feedback">
+            Diisi dulu namanya bos
+          </div>
+        </div>
+      </div>
+
+      <!-- Tanggal lahir dan Usia -->
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label>Tanggal lahir</label>
+          <input type="date" name="tanggal_lahir" class="form-control is-valid" required>
+          <div class="valid-feedback">
+            Jos tanggalnya
+          </div>
+          <div class="invalid-feedback">
+            Diisi dulu tanggal lahirnya bos
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-3">
+          <label>Usia</label>
+          <input type="number" name="usia" class="form-control is-valid" placeholder="Contoh: 24" required>
+          <div class="valid-feedback">
+            Jos usianya
+          </div>
+          <div class="invalid-feedback">
+            Diisi dulu usianya bos
+          </div>
+        </div>
+      </div>
+
+      <!-- Jenis Kelamin -->
+      <div class="form-row">
+        <div class="col-md-8 mb-3">
+          <label>Jenis Kelamin</label>
+          <div class="custom-control custom-radio">
+            <input class="custom-control-input" type="radio" name="jenis_kelamin" id="jenis-kelamin-laki" value="laki-laki" required>
+            <label class="custom-control-label" for="jenis-kelamin-laki">
+              Laki-Laki
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input class="custom-control-input" type="radio" name="jenis_kelamin" id="jenis-kelamin-perempuan" value="perempuan" required>
+            <label class="custom-control-label" for="jenis-kelamin-perempuan">
+              Perempuan
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alamat -->
+      <div class="form-row">
+        <div class="col-md-8 mb-3">
+          <label>Alamat</label>
+          <textarea name="alamat" rows="5" placeholder="Contoh: Jl. Kenanga No. 11 Semampir Surabaya" class="form-control is-invalid" required></textarea>
+          <div class="valid-feedback">
+            Alamat anda sudah sesuai
+          </div>
+          <div class="invalid-feedback">
+              Alamat anda kurang lengkap
+          </div>
+      </div>
+      </div>
+
+      <!-- Bubur diaduk/ga -->
+      <div class="form-row">
+        <div class="col-md-8 mb-3">
+          <label>Bubur diaduk / tidak?</label>
+          <div class="custom-control custom-radio">
+            <input class="custom-control-input" type="radio" name="opsi" id="diaduk" value="diaduk" required>
+            <label class="custom-control-label" for="diaduk">
+              Diaduk
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input class="custom-control-input" type="radio" name="opsi" id="tidak" value="tidak" required>
+            <label class="custom-control-label" for="tidak">
+              Tidak diaduk
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Telepon -->
+      <div class="form-row">
+        <div class="col-md-8 mb-3">
+          <label>No. Telepon</label>
+          <input type="tel" name="telepon" value="+6280 000000000" class="form-control is-invalid" required>
+          <div class="valid-feedback">
+            Nomor telpon anda sesuai
+          </div>
+          <div class="invalid-feedback">
+            Nomor telpon anda tidak sesuai
+          </div>
+        </div>
+      </div>
+
+      <!-- Tinggi badan -->
+      <div class="form row">
+        <div class="col-md-4 mb-3">
+          <label>Tinggi badan</label>
+          <div class="custom-control">
+            <input type="range" name="tinggi_badan" min="0" max="200" class="form-group" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pekerjaan -->
+      <div class="form-row">
+          <div class="col-md-8 mb-3">
+              <label>Pekerjaan</label>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="pns">
+                  <label class="custom-control-label" for="pns">PNS</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="swasta">
+                  <label class="custom-control-label" for="swasta">Swasta</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="lainnya">
+                  <label class="custom-control-label" for="lainnya">Lainnya</label>
+                </div>
+          </div>
+      </div>
+
+      <!-- Warna Kesukaan -->
+      <div class="form-row">
+        <div class="col-md-2 mb-3">
+          <label>Warna kesukaan</label>
+          <input type="color" name="color" class="form-control" required>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Kirim</button>
+    </form>
+  </div>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
