@@ -12,13 +12,13 @@
 
 <body>
   <div class="container">
-    <form class="need-validation" novalidate>
+    <form action="https://formspree.io/xvopkyzp" method="POST" class="need-validation was-validated" novalidate>
       
       <!-- Nama -->
       <div class="form-row">
         <div class="col-md-8 mb-3">
           <label>Nama</label>
-          <input type="text" class="form-control is-valid" placeholder="Isikan nama lengkap anda" required>
+          <input type="text" class="form-control" placeholder="Isikan nama lengkap anda" required>
           <div class="valid-feedback">
             Jos namanya
           </div>
@@ -32,7 +32,7 @@
       <div class="form-row">
         <div class="col-md-6 mb-3">
           <label>Tanggal lahir</label>
-          <input type="date" name="tanggal_lahir" class="form-control is-valid" required>
+          <input type="date" name="tanggal_lahir" class="form-control" required>
           <div class="valid-feedback">
             Jos tanggalnya
           </div>
@@ -43,7 +43,7 @@
 
         <div class="col-md-2 mb-3">
           <label>Usia</label>
-          <input type="number" name="usia" class="form-control is-valid" placeholder="Contoh: 24" required>
+          <input type="number" name="usia" class="form-control" placeholder="Contoh: 24" required>
           <div class="valid-feedback">
             Jos usianya
           </div>
@@ -76,12 +76,12 @@
       <div class="form-row">
         <div class="col-md-8 mb-3">
           <label>Alamat</label>
-          <textarea name="alamat" rows="5" placeholder="Contoh: Jl. Kenanga No. 11 Semampir Surabaya" class="form-control is-invalid" required></textarea>
+          <textarea name="alamat" rows="5" placeholder="Contoh: Jl. Kenanga No. 11 Semampir Surabaya" class="form-control" required></textarea>
           <div class="valid-feedback">
             Alamat anda sudah sesuai
           </div>
           <div class="invalid-feedback">
-              Alamat anda kurang lengkap
+            Alamat anda kurang lengkap
           </div>
       </div>
       </div>
@@ -107,9 +107,9 @@
 
       <!-- Telepon -->
       <div class="form-row">
-        <div class="col-md-8 mb-3">
+        <div class="col-md-6 mb-3">
           <label>No. Telepon</label>
-          <input type="tel" name="telepon" value="+6280 000000000" class="form-control is-invalid" required>
+          <input type="tel" name="telepon" placeholder="+6280 000000000" class="form-control" required>
           <div class="valid-feedback">
             Nomor telpon anda sesuai
           </div>
@@ -121,11 +121,9 @@
 
       <!-- Tinggi badan -->
       <div class="form row">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-2 mb-3">
           <label>Tinggi badan</label>
-          <div class="custom-control">
-            <input type="range" name="tinggi_badan" min="0" max="200" class="form-group" required>
-          </div>
+            <input input type="number" name="tinggi_badan" class="form-control" placeholder="187" required>
         </div>
       </div>
 
@@ -155,7 +153,8 @@
           <input type="color" name="color" class="form-control" required>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Kirim</button>
+      <input type="hidden" name="_replyto" id="">
+      <button type="submit" class="btn btn-primary" value="Send">Kirim</button>
     </form>
   </div>
 
